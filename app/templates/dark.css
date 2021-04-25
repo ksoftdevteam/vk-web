@@ -1,0 +1,254 @@
+* {
+  font-family: 'Montserrat';
+  font-style: normal;
+  transition: 0.25s;
+  user-select: none;
+}
+
+
+body {
+  margin: 0;
+  padding: 20px 30px;
+  background: #2D2D2D url(http://45.14.15.180:177/resources/background_night.png);
+  background-repeat: none;
+  background-size: 100%;
+}
+
+
+.logo_login {
+  width: 140px;
+  height: 37px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 37px;
+
+  letter-spacing: 0.30em;
+
+  color: #FFFFFF;
+}
+
+
+.wrong_number {
+  width: 237px;
+  height: 22px;
+
+  padding-bottom: 10px;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  cursor: pointer;
+
+  color: #DEDEDE;
+}
+
+
+.wrong_number:hover {
+  color: #FFFFFF;
+}
+
+
+img.back_arrow {
+  padding-right: 13px;
+}
+
+
+img.back_arrow:hover {
+  padding-right: 18px;
+}
+
+
+.form_name {
+  width: 100%;
+  height: 74px;
+
+  margin: 0 auto;
+
+  margin-top: 40px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 78px;
+  text-align: center;
+
+  color: #4F7BD7;
+
+}
+
+
+.sub_form_name {
+  width: 500px;
+  height: 86px;
+
+  padding: 15px 0;
+
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #DEDEDE;
+
+}
+
+
+input.classic {
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B2B2B2;
+
+    padding: 15px 5px;
+
+    font-weight: 275;
+    font-size: 17px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+
+input.classic:hover {
+  border-bottom: 1px solid #B269DF;
+}
+
+
+input.classic:focus {
+  border-bottom: 1px solid #B269DF;
+}
+
+
+textarea.classic {
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B2B2B2;
+
+    padding: 15px 5px;
+
+    font-weight: 275;
+    font-size: 17px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+
+textarea.classic:hover {
+  border-bottom: 1px solid #B269DF;
+}
+
+
+textarea.classic:focus {
+  border-bottom: 1px solid #B269DF;
+}
+
+
+.center_form_place {
+    height: 70vh;
+    position: relative
+
+}
+
+
+button.sign_in {
+    outline: none;
+    margin-top: 40px;
+    width: 150px;
+    height: 45px;
+
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+
+    border: none;
+
+    background: #55336A;
+
+    color: #FFFFFF;
+}
+
+
+button.sign_in:hover {
+    cursor: pointer;
+    background: #452758;
+}
+
+
+input.sign_in {
+    outline: none;
+    margin-top: 40px;
+    width: 150px;
+    height: 45px;
+
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+
+    border: none;
+
+    background: #55336A;
+
+    color: #FFFFFF;
+}
+
+
+input.sign_in:hover {
+    cursor: pointer;
+    background: #452758;
+}
+
+
+button.finish {
+    outline: none;
+    margin-top: 40px;
+    width: 150px;
+    height: 45px;
+
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+
+    border: none;
+
+    background: #18491A;
+
+    color: #FFFFFF;
+}
+
+
+button.finish:hover {
+    cursor: pointer;
+    background: #113A13;
+}
+
+
+.footer {
+    box-sizing: border-box;
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    color: #FFFFFF; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    padding: 15px 25px;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 24px;
+   }
+
+
+.center_form {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VK Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://45.14.15.180:177/resources/dark.css" type="text/css">
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.js"
+  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+  crossorigin="anonymous"></script>
+  <script src="http://45.14.15.180:177/resources/jquery.maskedinput.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="logo_login">VEZDEKOD</div>
+      <div class="center_form_place">
+        <div class="center_form">
+          <div class="form_name">У меня проблема!</div>
+          <div class="sub_form_name" style="width: 100%">
+            Заполните данную форму для обращения в службу поддержки
+          </div>
+		  <form id="problem" action="/ticket/api" method="post">
+			  <div style="text-align: center">
+				<input required style="width: 350px; margin-bottom: 20px;" class="classic" type="text" name="name" placeholder="Ваше ФИО">
+			  </div>
+			  <div style="text-align: center">
+				<input required style="width: 350px; margin-bottom: 20px;" class="classic" type="text" id="phone" name="phone" placeholder="Номер телефона">
+			  </div>
+			  <br>
+			  <div style="text-align: center">
+				<textarea required style="width: 350px; margin-bottom: 20px;" class="classic" type="text" name="problem" placeholder="Текст обращения"></textarea>
+			  </div>
+				  <div style="text-align: center">
+				  <input class="sign_in" type="submit" value="Отправить">
+			  </div>
+		  </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div style="cursor: pointer">ksoft.dev</div>
+    </div>
+	<script>
+//Код jQuery, установливающий маску для ввода телефона элементу input
+//1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+$(function(){
+  //2. Получить элемент, к которому необходимо добавить маску
+  $("#phone").mask("+7 (999) 999-9999");
+});
+</script>
+  </body>
+</html>
